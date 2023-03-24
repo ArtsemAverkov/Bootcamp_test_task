@@ -2,7 +2,7 @@ package by.it.academy.common.service;
 
 import by.it.academy.common.extension.InvalidParameterResolverUser;
 import by.it.academy.common.extension.ValidParameterResolverUser;
-import by.it.academy.dto.UserDto;
+import by.it.academy.dto.userDto.UserDto;
 import by.it.academy.entity.Role;
 import by.it.academy.entity.User;
 import by.it.academy.repository.person.UserRepository;

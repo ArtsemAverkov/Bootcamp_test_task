@@ -1,6 +1,6 @@
 package by.it.academy.common.extension;
 
-import by.it.academy.dto.UserDto;
+import by.it.academy.dto.userDto.UserDto;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.ParameterContext;
 import org.junit.jupiter.api.extension.ParameterResolutionException;

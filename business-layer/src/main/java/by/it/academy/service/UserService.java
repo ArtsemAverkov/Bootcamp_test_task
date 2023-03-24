@@ -1,6 +1,6 @@
 package by.it.academy.service;
 
-import by.it.academy.dto.UserDto;
+import by.it.academy.dto.userDto.UserDto;
 import by.it.academy.entity.User;
 import org.springframework.data.domain.Pageable;
 

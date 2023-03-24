@@ -1,0 +1,5 @@
+by/it/academy/service/UserService.class
+by/it/academy/service/UserApiService.class
+by/it/academy/dto/exceptions/ResponseError.class
+by/it/academy/dto/userDto/UserDto.class
+by/it/academy/dto/exceptions/ResponseError$ResponseErrorBuilder.class

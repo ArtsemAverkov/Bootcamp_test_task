@@ -1,0 +1,4 @@
+by/it/academy/entity/Role.class
+by/it/academy/entity/User$UserBuilder.class
+by/it/academy/entity/User.class
+by/it/academy/repository/person/UserRepository.class

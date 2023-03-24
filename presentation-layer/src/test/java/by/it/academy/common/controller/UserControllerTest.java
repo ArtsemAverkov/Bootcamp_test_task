@@ -1,10 +1,9 @@
 package by.it.academy.common.controller;
 
 
-import by.it.academy.Application;
 import by.it.academy.common.extension.ValidParameterResolverUser;
-import by.it.academy.controller.UserController;
-import by.it.academy.dto.UserDto;
+import by.it.academy.controller.user.UserController;
+import by.it.academy.dto.userDto.UserDto;
 import by.it.academy.entity.Role;
 import by.it.academy.entity.User;
 import by.it.academy.service.UserService;
@@ -21,7 +20,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import org.springframework.test.web.servlet.MockMvc;
