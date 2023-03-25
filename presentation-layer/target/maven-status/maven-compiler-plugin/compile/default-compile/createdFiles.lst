@@ -1,4 +1,3 @@
-by/it/academy/Application.class
 by/it/academy/flyway/FlywayConfig.class
 by/it/academy/controller/user/UserController.class
 by/it/academy/controller/exception/ControllerExceptionHandler.class

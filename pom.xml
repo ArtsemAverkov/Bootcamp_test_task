@@ -24,6 +24,7 @@
             <module>presentation-layer</module>
             <module>business-layer</module>
             <module>data-access-layer</module>
+            <module>application</module>
         </modules>
 
     <dependencies>

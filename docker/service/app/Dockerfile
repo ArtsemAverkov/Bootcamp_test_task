@@ -1,8 +1,4 @@
-#FROM openjdk:11
-#ADD module-controller-1.0-SNAPSHOT.jar module.jar
-#ENTRYPOINT ["java", "-jar", "module.jar"]
-
-FROM openjdk:11-jre-slim
+FROM openjdk:11
 WORKDIR /app
-ADD module-controller-1.0-SNAPSHOT.jar module.jar
-CMD java -jar ./module.jar
+ADD application-1.0-SNAPSHOT.jar application.jar
+CMD java -jar ./application.jar

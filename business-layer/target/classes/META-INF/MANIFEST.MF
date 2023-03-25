@@ -1,2 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: data-access-layer-1.0-SNAPSHOT.jar

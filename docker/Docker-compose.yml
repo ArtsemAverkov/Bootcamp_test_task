@@ -6,22 +6,24 @@ services:
       dockerfile: Dockerfile
     environment:
       - PORT=8080
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres/root
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mySql/root
       - JS_URL=http://localhost
+    image: 'java-application'
     ports:
-      - "8080:8080"
+        - "8080:8080"
     depends_on:
-         - postgres
+        - mySql
 
-
-  postgres:
+  mySql:
+    image: mysql:8.0
     build:
-      context: /service/postgres
+      context: ./service/mySql
       dockerfile: Dockerfile
     ports:
-      - "5433:5432"
+      - "3307:3307"
     environment:
-      - POSTGRES_USER=artemaverkov
-      - POSTGRES_DB=root
-      - POSTGRES_PASSWORD=root
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=root
+      - MYSQL_USER=artemaverkov
+      - MYSQL_PASSWORD=root
 

@@ -7,13 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="data-access-layer" />
-        <module name="presentation-layer" />
         <module name="business-layer" />
+        <module name="application" />
+        <module name="presentation-layer" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="application" options="-parameters" />
       <module name="business-layer" options="-parameters" />
       <module name="data-access-layer" options="-parameters" />
       <module name="presentation-layer" options="-parameters" />
