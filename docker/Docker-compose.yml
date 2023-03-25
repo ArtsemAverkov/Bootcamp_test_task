@@ -1,39 +1,18 @@
 version: '3.8'
 services:
   app:
-    build: ./service/app
-    environment:
-      - BUSINESS_HOST=data
-      - BUSINESS_PORT=8080
-    ports:
-      - 8080:8080
-
-
-
-
-  business:
-    build: ./service/business
-    environment:
-      - DATA_HOST=data
-      - DATA_PORT=8090
-    ports:
-      - 8090:8090
-
-    depends_on:
-      - app
-
-
-  data:
     build:
-      context: ./service/data
+      context: ./service/app
       dockerfile: Dockerfile
     environment:
-      - PORT=8091
+      - PORT=8080
       - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres/root
       - JS_URL=http://localhost
-    image: 'my-java-application'
     ports:
-      - 8091:8091
+      - "8080:8080"
+    depends_on:
+         - postgres
+
 
   postgres:
     build:
@@ -45,5 +24,4 @@ services:
       - POSTGRES_USER=artemaverkov
       - POSTGRES_DB=root
       - POSTGRES_PASSWORD=root
-
 
